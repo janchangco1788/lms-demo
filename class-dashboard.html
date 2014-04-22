@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"/>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+	  $(function() {
+	    $("#datepicker").datepicker({ numberOfMonths: [ 3, 1 ] });
+	    //$("#datepicker").height();
+	    $(".filmstrip").scrollable();
+	  });
+	</script>
+</head>
+<body>
+	<div class="row-fluid header">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <a class="brand" href="./index.html">Manage Classes</a>
+					<div class="nav-collapse collapse" style="height: 0px;">
+						<ul class="nav">
+						  <li>
+						    <a href="home.html">Home</a>
+						  </li>
+						  <li class="active"><a href="class-dashboard.html">Classes</a></li>
+						  <li><a href="#">Link</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid show-grid">
+		<div class="container">
+	  		<div class="row-fluid">
+		  		<div class="span9">
+		  			<div class="class-scroll">
+		  				<a href="" class="previous">Prev</a>
+			  			<div class="filmstrip-container">
+				  			<div class="filmstrip">
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  				<div class="entry"></div>
+				  			</div>
+			  			</div>
+			  			<a href="" class="next">Next</a>
+			  		</div>
+		  		</div>
+		  		<div class="span3 side-calendar">
+		  			<div id="datepicker"></div>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+</body>
+</html>
